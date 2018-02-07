@@ -1,9 +1,4 @@
-function produceDrivingRange() {
-  return (blockRange) => {
-    if (blockRange <= 10) {
-      return true
-    }  else {
-      return parseInt(blockRange) - 10 + ' blocks out of range';
-    }
-  }
+function produceDrivingRange(n) {
+  return function(m) { return m > n; };
 }
+var produceDrivingRange10 = produceDrivingRange(10);
