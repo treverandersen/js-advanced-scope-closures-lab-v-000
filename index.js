@@ -3,7 +3,7 @@ function produceDrivingRange() {
     if (blockRange <= 10) {
       return true
     } else {
-      return blockRange - 10 + 'blocks out of range';
+      return parseInt(blockRange) - 10 + 'blocks out of range';
     }
   }
 }
