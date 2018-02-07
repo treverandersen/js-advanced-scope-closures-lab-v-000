@@ -1,10 +1,9 @@
 function produceDrivingRange() {
-  return function(lessThanTen) {
-    if (lessThanTen <= 10) {
+  return function(blockRange) {
+    if (blockRange <= 10) {
       return true
     } else {
-      return false
+      return blockRange - 10 + 'blocks out of range';
     }
   }
 }
-
