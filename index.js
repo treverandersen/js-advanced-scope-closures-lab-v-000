@@ -1,4 +1,4 @@
-produceDrivingRange => {
+function produceDrivingRange() {
   return (blockRange) => {
     if (blockRange <= 10) {
       return true
